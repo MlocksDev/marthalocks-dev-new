@@ -7,7 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IntroComponent } from './pages/intro/intro.component';
 import { CampaniesComponent } from './pages/campanies/campanies.component';
-import { ServicesSectionComponent } from './pages/services-section/services-section.component';
+import { ServicesComponent } from './pages/services/services.component';
 import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
 import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { FaqComponent } from './pages/faq/faq.component';
@@ -20,7 +20,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     FooterComponent,
     IntroComponent,
     CampaniesComponent,
-    ServicesSectionComponent,
+    ServicesComponent,
     TestimonialsComponent,
     PortfolioComponent,
     FaqComponent,
