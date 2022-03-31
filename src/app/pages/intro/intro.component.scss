@@ -1,45 +1,44 @@
-@import "src/scss/custom";
+@import "src/scss/bootstrap";
+@import "src/scss/mixins";
 
-.get-started {
-  padding: 4rem 0;
-  background-color: $gray-200;
+.intro-section {
+  @include gradient;
+  padding: 10rem 0 0 0;
+  width: 100%;
+  height: 100%;
 }
 
-.cta-info {
-  padding: 3rem;
-  margin: 1rem 0;
-
-  &__list {
+.intros {
+  .video-box {
     position: relative;
-    list-style-type: none;
-    display: block;
-    padding-top: 0.5rem;
-    padding-left: 0.5rem;
-    margin-bottom: 0.7rem;
 
-    li::before {
-      font-family: "Font Awesome 5 Free";
-      content: "\f00c";
-      font-weight: 600;
-      margin-right: 0.5rem;
-      font-size: 1.2rem;
+    a {
+      // @include absoluteCenter;
+
+      span {
+        i {
+          font-size: 6rem;
+          color: $secondary;
+        }
+      }
     }
   }
 }
 
-// FORM CONTENT
-.form {
-  padding: 3rem;
+.border-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: 6rem;
+  border: 0.55rem solid $white;
+  border-radius: 50%;
+  animation: pulse-border 1.5s linear infinite;
 
-  button {
-    border: none;
-    color: $white;
-    text-transform: capitalize;
-
-    a {
-      color: $white;
-      text-decoration: none;
-      text-transform: capitalize;
-    }
+  &--border-1 {
+    animation-delay: 1s;
+  }
+  &--border-2 {
+    animation-delay: 1.5s;
   }
 }
