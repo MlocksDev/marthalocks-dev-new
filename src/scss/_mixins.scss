@@ -1,5 +1,5 @@
 // GRADIENT MIXIN
-@import "bootstrap";
+@use "bootstrap" as *;
 
 @mixin gradient {
   background: linear-gradient(

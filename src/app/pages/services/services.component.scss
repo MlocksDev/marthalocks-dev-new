@@ -1,4 +1,4 @@
-@import "src/scss/bootstrap";
+@use "src/scss/bootstrap" as *;
 
 .services {
   position: relative;

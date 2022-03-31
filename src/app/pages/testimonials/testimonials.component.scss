@@ -1,5 +1,5 @@
-@import "src/scss/bootstrap";
-@import "src/scss/mixins";
+@use "src/scss/bootstrap" as *;
+@use "src/scss/mixins" as *;
 
 .testimonials {
   position: relative;
