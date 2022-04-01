@@ -5,12 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { IntroComponent } from './pages/intro/intro.component';
-import { CampaniesComponent } from './pages/campanies/campanies.component';
-import { ServicesComponent } from './pages/services/services.component';
-import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
-import { PortfolioComponent } from './pages/portfolio/portfolio.component';
-import { FaqComponent } from './pages/faq/faq.component';
+import { IntroComponent } from './components/intro/intro.component';
+import { CampaniesComponent } from './components/campanies/campanies.component';
+import { ServicesComponent } from './components/services/services.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 @NgModule({
   declarations: [
