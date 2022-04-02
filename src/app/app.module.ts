@@ -8,7 +8,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { IntroComponent } from './components/intro/intro.component';
 import { CampaniesComponent } from './components/campanies/campanies.component';
 import { ServicesComponent } from './components/services/services.component';
-import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { FaqComponent } from './components/faq/faq.component';
 
@@ -20,7 +19,6 @@ import { FaqComponent } from './components/faq/faq.component';
     IntroComponent,
     CampaniesComponent,
     ServicesComponent,
-    TestimonialsComponent,
     PortfolioComponent,
     FaqComponent
   ],
