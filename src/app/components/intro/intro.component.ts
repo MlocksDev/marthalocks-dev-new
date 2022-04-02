@@ -16,7 +16,7 @@ export class IntroComponent implements OnInit {
   private initGLightbox(): void {
     GLightbox({
       'touchNavigation': true,
-      'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+      'href': 'https://www.youtube.com/watch?v=1VaZLn3_ADQ',
       'type': 'video',
       'source': 'youtube', //vimeo, youtube or local
       'width': 900,
