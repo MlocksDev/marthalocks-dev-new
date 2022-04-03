@@ -4,10 +4,6 @@ $blue-light: #61b2da;
 $blue: #3e7ba9;
 $footer: #1c1b1b;
 
-// #######################################
-//		NO NEED TO CUSTOM THE GRAY COLOR IF YOU DO NOT
-// #######################################
-
 $primary: $blue-dark;
 $secondary: $blue;
 
@@ -20,18 +16,12 @@ $accordion-icon-active-color: $secondary;
 $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/> <path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>  <path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
 
-// ##########################################
-//   OPTION 1:
-// - IMPORT BOOTSTRAP ( The entire bootstrap with everything)
-// ##########################################
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 @import "node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
 @import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
-
-// GRADIENT MIXIN
 
 @mixin gradient {
   background: linear-gradient(
@@ -41,7 +31,6 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   );
 }
 
-// ABSOLUTE CENTER
 @mixin absoluteCenter {
   position: absolute;
   top: 50%;
@@ -49,13 +38,10 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   transform: translate(-50%, -50%);
 }
 
-// TRANSITION PROPERTY
 @mixin transitionProperty {
   transition-duration: 1s;
   transition-property: all;
 }
-
-// PULSE BORDER
 
 @keyframes pulse-border {
   0% {
@@ -104,6 +90,7 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
     }
   }
 }
+
 .display-2 {
   margin-bottom: 1rem;
   text-transform: capitalize;
@@ -128,7 +115,6 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   }
 }
 
-// HEADING LINE
 .heading-line::before {
   content: "";
   width: 10rem;
@@ -137,6 +123,7 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   margin: 0 auto;
   background-color: $primary;
 }
+
 .heading-line::after {
   content: "";
   width: 2rem;
@@ -148,7 +135,6 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   background-color: $primary;
 }
 
-// DISPLAY 3
 .display-3 {
   font-family: "Poppins", sans-serif;
 
@@ -169,7 +155,6 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   }
 }
 
-// BORDER RIGHT
 .border-right {
   border-right: 0;
 
@@ -179,7 +164,6 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   }
 }
 
-// GRADIENT BG
 .gradient {
   background: linear-gradient(
     to right,
@@ -218,8 +202,6 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
     position: relative;
 
     a {
-      // @include absoluteCenter;
-
       span {
         i {
           font-size: 6rem;
@@ -346,6 +328,7 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
       }
     }
   }
+
   &:hover {
     img {
       transform: scale(1.5);
@@ -386,7 +369,6 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   }
 }
 
-// FORM CONTENT
 .form {
   padding: 3rem;
 
@@ -408,7 +390,6 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   background-color: $footer;
 }
 
-// STYLE THE CONTACT-BOX CONTENT
 .contact-box {
   position: relative;
 
@@ -448,7 +429,6 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   }
 }
 
-// STYLE THE SOCIAL MEDIA CONTENT
 .footer-sm {
   a {
     color: $white;
@@ -467,7 +447,6 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   }
 }
 
-// STYLE THE CAMPANY INFO CONTENT
 .campany-list {
   display: block;
   list-style-type: none;
@@ -488,7 +467,6 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   }
 }
 
-// STYLE THE COPYRIGHT  CONTENT
 .footer-bottom {
   background-color: $footer;
 
@@ -508,7 +486,6 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   }
 }
 
-// STYLE THE BACK TO TOP BUTTON
 .back-to-top {
   position: fixed;
   width: 3rem;
