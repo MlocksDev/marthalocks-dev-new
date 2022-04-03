@@ -24,10 +24,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-faq',
-  templateUrl: './faq.component.html'
+  selector: 'app-contact',
+  templateUrl: './contact.component.html'
 })
-export class FaqComponent implements OnInit {
+export class ContactComponent implements OnInit {
 
   constructor() { }
 
