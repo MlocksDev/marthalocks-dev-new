@@ -22,6 +22,7 @@
  * THE SOFTWARE.
  */
 import { Component, OnInit } from '@angular/core';
+declare var GLightbox: any;
 
 @Component({
   selector: 'app-portfolio',
@@ -32,6 +33,15 @@ export class PortfolioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    this.initGLightbox();
+  }
+
+  private initGLightbox(): void {
+    GLightbox({
+      selector: '.glightbox-img',
+      openEffect: 'zoom'
+    });
   }
 
 }
