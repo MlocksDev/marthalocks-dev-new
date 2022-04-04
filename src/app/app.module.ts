@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { IntroComponent } from './components/intro/intro.component';
-import { CampaniesComponent } from './components/campanies/campanies.component';
 import { ServicesComponent } from './components/services/services.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { FaqComponent } from './components/faq/faq.component';
@@ -18,7 +17,6 @@ import { ContactComponent } from './components/contact/contact.component';
     NavbarComponent,
     FooterComponent,
     IntroComponent,
-    CampaniesComponent,
     ServicesComponent,
     PortfolioComponent,
     FaqComponent,
