@@ -34,4 +34,20 @@ export class ServicesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public urlAngular() {
+    window.location.href = "https://angular.io/docs"
+  }
+
+  public urlPhp() {
+    window.location.href = "https://www.php.net/docs.php"
+  }
+
+  public urlPython() {
+    window.location.href = "https://docs.python.org/3/"
+  }
+
+  public urlMysql() {
+    window.location.href = "https://dev.mysql.com/doc/"
+  }
+
 }
