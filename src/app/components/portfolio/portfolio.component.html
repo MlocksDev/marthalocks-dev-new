@@ -10,104 +10,30 @@
         <!-- FILTER BUTTONS  -->
         <div class="row mt-5 mb-4 g-3 text-center">
             <div class="col-md-12">
-                <button class="btn btn-outline-primary m-1" type="button">All</button>
-                <button class="btn btn-outline-primary m-1" type="button">Frontend</button>
-                <button class="btn btn-outline-primary m-1" type="button">Backend</button>
+                <button class="btn btn-outline-primary m-1" type="button" (click)="filter('All')">All</button>
+                <button class="btn btn-outline-primary m-1" type="button" (click)="filter('Frontend')">Frontend</button>
+                <button class="btn btn-outline-primary m-1" type="button" (click)="filter('Backend')">Backend</button>
             </div>
         </div>
 
         <!-- START THE PORTFOLIO ITEMS  -->
         <div class="row">
-            <div class="col-lg-4 col-md-6">
-                <div class="portfolio-box shadow">
-                    <a href="assets/images/portfolio/perfil_imoveis.png" class="glightbox glightbox-img">
-                        <img src="assets/images/portfolio/perfil_imoveis.png" alt="Perfil Imoveis"
-                            title="portfolio 1 picture" class="img-fluid">
-                        <div class="portfolio-info">
-                            <div class="caption">
-                                <h4>Perfil Imóveis</h4>
-                                <p>Frontend</p>
+            <ng-template ngFor let-portfolioItem [ngForOf]="portfolioItems" let-i="index">
+                <div class="col-lg-4 col-md-6" *ngIf="portfolioItem.show">
+                    <div class="portfolio-box shadow">
+                        <a href="assets/images/portfolio/{{portfolioItem.image}}" class="glightbox glightbox-img">
+                            <img src="assets/images/portfolio/{{portfolioItem.image}}" alt="Perfil Imoveis"
+                                title="portfolio 1 picture" class="img-fluid">
+                            <div class="portfolio-info">
+                                <div class="caption">
+                                    <h4>{{portfolioItem.name}}</h4>
+                                    <p>{{portfolioItem.category}}</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="portfolio-box shadow">
-                    <a href="assets/images/portfolio/perfil_imoveis_backend.png" class="glightbox glightbox-img">
-                        <img src="assets/images/portfolio/perfil_imoveis_backend.png" alt="Perfil Imoveis"
-                            title="portfolio 1 picture" class="img-fluid">
-                        <div class="portfolio-info">
-                            <div class="caption">
-                                <h4>Perfil Imóveis</h4>
-                                <p>Backend</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
-            <div class="col-lg-4 col-md-6">
-                <div class="portfolio-box shadow">
-                    <a href="assets/images/portfolio/cidades_co.png" class="glightbox glightbox-img">
-                        <img src="assets/images/portfolio/cidades_co.png" alt="Cidades.co" title="portfolio 2 picture"
-                            class="img-fluid">
-                        <div class="portfolio-info">
-                            <div class="caption">
-                                <h4>Cidades.co</h4>
-                                <p>Frontend</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="portfolio-box shadow">
-                    <a href="assets/images/portfolio/cidades_co_backend.png" class="glightbox glightbox-img">
-                        <img src="assets/images/portfolio/cidades_co_backend.png" alt="Cidades.co"
-                            title="portfolio 2 picture" class="img-fluid">
-                        <div class="portfolio-info">
-                            <div class="caption">
-                                <h4>Cidades.co</h4>
-                                <p>Backend</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="portfolio-box shadow">
-                    <a href="assets/images/portfolio/crieatividade.png" class="glightbox glightbox-img">
-                        <img src="assets/images/portfolio/crieatividade.png" alt="Crieatividade"
-                            title="portfolio 3 picture" class="img-fluid">
-                        <div class="portfolio-info">
-                            <div class="caption">
-                                <h4>Crieatividade</h4>
-                                <p>Frontend</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="portfolio-box shadow">
-                    <a href="assets/images/portfolio/crieatividade_backend.png" class="glightbox glightbox-img">
-                        <img src="assets/images/portfolio/crieatividade_backend.png" alt="Crieatividade"
-                            title="portfolio 3 picture" class="img-fluid">
-                        <div class="portfolio-info">
-                            <div class="caption">
-                                <h4>Crieatividade</h4>
-                                <p>Backend</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            </ng-template>
         </div>
     </div>
 </section>

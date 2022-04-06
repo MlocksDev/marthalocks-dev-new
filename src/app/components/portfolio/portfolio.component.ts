@@ -30,18 +30,80 @@ declare var GLightbox: any;
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  public portfolioItems = [
+    {
+      image: 'perfil_imoveis.png',
+      name: 'Perfil Imóveis',
+      category: 'Frontend',
+      show: true
+    },
+
+    {
+      image: 'perfil_imoveis_backend.png',
+      name: 'Perfil Imóveis',
+      category: 'Backend',
+      show: true
+    },
+
+    {
+      image: 'cidades_co.png',
+      name: 'Cidades.co',
+      category: 'Frontend',
+      show: true
+    },
+
+    {
+      image: 'cidades_co_backend.png',
+      name: 'Cidades.co',
+      category: 'Backend',
+      show: true
+    },
+
+    {
+      image: 'crieatividade.png',
+      name: 'Crieatividade',
+      category: 'Frontend',
+      show: true
+    },
+
+    {
+      image: 'crieatividade_backend.png',
+      name: 'Crieatividade',
+      category: 'Backend',
+      show: true
+    }
+
+  ];
+
+  constructor() {
+  }
 
   ngOnInit(): void {
 
     this.initGLightbox();
   }
 
-  private initGLightbox(): void {
-    GLightbox({
-      selector: '.glightbox-img',
-      openEffect: 'zoom'
+  public filter(category: string) {
+
+    this.portfolioItems.forEach(item => {
+
+      if (category == 'All') {
+        item.show = true;
+      } else {
+        item.show = (item.category == category);
+      }
     });
+
+    this.initGLightbox();
+  }
+
+  private initGLightbox(): void {
+    setTimeout(() => {
+      GLightbox({
+        selector: '.glightbox-img',
+        openEffect: 'zoom'
+      });
+    }, 500);
   }
 
 }
