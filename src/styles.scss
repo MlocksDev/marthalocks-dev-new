@@ -421,7 +421,7 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
       }
     }
     &:hover {
-      color: $primary;
+      color: $white;
     }
   }
 }
@@ -438,8 +438,8 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
       text-decoration: none;
 
       &:hover {
-        color: $primary;
-        text-decoration: underline;
+        color: $white;
+        text-decoration: none;
       }
     }
   }
