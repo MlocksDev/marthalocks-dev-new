@@ -367,6 +367,12 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
 .footer {
   padding-top: 1rem;
   background-color: $footer;
+
+  a {
+    &:hover {
+      color: #6c757d;
+    }
+  }
 }
 
 .contact-box {
@@ -421,7 +427,7 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
       }
     }
     &:hover {
-      color: $white;
+      color: #6c757d;
     }
   }
 }
