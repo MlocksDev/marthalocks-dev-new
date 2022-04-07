@@ -34,4 +34,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public tellMe() {
+    window.location.href = "https://api.whatsapp.com/send?phone=5548984330719&text=Olá,%20entre%20em%20contato%20para%20maiores%20informações."
+  }
+
 }
