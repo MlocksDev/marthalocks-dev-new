@@ -83,6 +83,8 @@ export class PortfolioComponent implements OnInit {
     this.initGLightbox();
   }
 
+  public selecionar = ['category'];
+
   public filter(category: string) {
 
     this.portfolioItems.forEach(item => {
