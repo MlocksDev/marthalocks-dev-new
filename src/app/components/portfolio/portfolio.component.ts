@@ -30,6 +30,8 @@ declare var GLightbox: any;
 })
 export class PortfolioComponent implements OnInit {
 
+  public selectCategory = 'All';
+
   public portfolioItems = [
     {
       image: 'perfil_imoveis.png',
@@ -83,10 +85,9 @@ export class PortfolioComponent implements OnInit {
     this.initGLightbox();
   }
 
-  public selecionar = ['category'];
-
   public filter(category: string) {
 
+    this.selectCategory = category;
     this.portfolioItems.forEach(item => {
 
       if (category == 'All') {

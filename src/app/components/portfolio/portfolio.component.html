@@ -10,9 +10,12 @@
         <!-- FILTER BUTTONS  -->
         <div class="row mt-5 mb-4 g-3 text-center">
             <div class="col-md-12">
-                <button class="btn btn-outline-primary m-1" type="button" (click)="filter('All')">All</button>
-                <button class="btn btn-outline-primary m-1" type="button" (click)="filter('Frontend')">Frontend</button>
-                <button class="btn btn-outline-primary m-1" type="button" (click)="filter('Backend')">Backend</button>
+                <button class="btn m-1" type="button" (click)="filter('All')"
+                    [ngClass]="{'btn-primary':selectCategory == 'All', 'btn-outline-primary': selectCategory != 'All'}">All</button>
+                <button class="btn btn-outline-primary m-1" type="button" (click)="filter('Frontend')"
+                    [ngClass]="{'btn-primary':selectCategory == 'Frontend'}">Frontend</button>
+                <button class="btn btn-outline-primary m-1" type="button" (click)="filter('Backend')"
+                    [ngClass]="{'btn-primary':selectCategory == 'Backend'}">Backend</button>
             </div>
         </div>
 
