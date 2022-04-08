@@ -231,6 +231,24 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   }
 }
 
+@include media-breakpoint-down(sm) {
+  .intro-section {
+    padding: 5rem 0 0 0;
+  }
+  .button-hidden-sm {
+    display: none;
+  }
+
+  .border-animation {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .fa-play-circle {
+    font-size: 4rem !important;
+  }
+}
+
 .services {
   position: relative;
   padding: 1rem 0;
