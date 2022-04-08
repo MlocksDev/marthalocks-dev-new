@@ -6,7 +6,7 @@ It's deployed on Firebase https://firebase.google.com
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
-![](src/assets/screenshots/1.png)
+![](src/assets/screenshots/screenshot.gif)
 
 ## Development server
 
