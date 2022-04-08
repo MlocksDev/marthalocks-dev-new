@@ -8,6 +8,41 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ![](src/assets/screenshots/screenshot.gif)
 
+## Sections / Components
+
+- Navbar
+- Header
+- Services
+- Faq
+- Portfolio
+- Footer
+
+## Install Dependencies
+
+**1. Check if you have a recent version of [Node.js](https://nodejs.org/) (which comes bundled with [npm](https://www.npmjs.com/), a JavaScript package manager):**
+
+```bash
+$ node -v
+```
+
+```bash
+$ npm -v
+```
+
+**2. In the _project root directory_ install all the dependencies and libs:**
+
+```bash
+$ npm install
+```
+
+**3. Run the following command:**
+
+```bash
+$ npm run start
+```
+
+**4. And then access [http://localhost:4200/](http://localhost:4200/) on your browser.**
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
@@ -31,3 +66,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+# References
+
+- Angular: [https://angular.io/](https://angular.io/)
+
+- Firebase: [https://firebase.google.com/](https://firebase.google.com/)
+
+# License
+
+Please see the [license agreement](https://github.com/MlocksDev/marthalocks-dev-new/blob/master/LICENSE).
