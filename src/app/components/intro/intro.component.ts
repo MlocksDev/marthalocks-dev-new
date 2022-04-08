@@ -25,7 +25,8 @@ import { Component, OnInit } from '@angular/core';
 declare var GLightbox: any;
 @Component({
   selector: 'app-intro',
-  templateUrl: './intro.component.html'
+  templateUrl: './intro.component.html',
+  styleUrls: ['./intro.component.scss']
 })
 export class IntroComponent implements OnInit {
 
@@ -49,9 +50,7 @@ export class IntroComponent implements OnInit {
   }
 
   public contactMe() {
-
     window.location.href = "https://api.whatsapp.com/send?phone=5548984330719&text=Olá,%20entre%20em%20contato%20para%20maiores%20informações."
-
   }
 
 }

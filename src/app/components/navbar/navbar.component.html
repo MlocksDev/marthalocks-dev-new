@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">
             <h3>Martha Locks</h3>
@@ -9,10 +9,14 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#faq">faq</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" [ngClass]="{'active': selectedMenu == 'Home'}"
+                        aria-current="page" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" [ngClass]="{'active': selectedMenu == 'Services'}"
+                        href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" [ngClass]="{'active': selectedMenu == 'Faq'}"
+                        href="#faq">faq</a></li>
+                <li class="nav-item"><a class="nav-link" [ngClass]="{'active': selectedMenu == 'Portfolio'}"
+                        href="#portfolio">portfolio</a></li>
             </ul>
             <button type="button" class="rounded-pill btn-rounded" (click)="tellMe()">
                 +55 48 98433-0719

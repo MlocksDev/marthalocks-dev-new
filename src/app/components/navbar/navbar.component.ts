@@ -29,13 +29,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  public selectedMenu = 'Home';
+
   constructor() { }
 
   ngOnInit(): void {
+    this.scrolling();
   }
 
   public tellMe() {
     window.location.href = "https://api.whatsapp.com/send?phone=5548984330719&text=Olá,%20entre%20em%20contato%20para%20maiores%20informações."
+  }
+
+  public scrolling() {
+    window.addEventListener('scroll', (e) => {
+
+      const navbar = document.getElementById('navbar');
+      const heightNavbar = <number>navbar?.offsetHeight;
+
+      const services = document.getElementById('services');
+      const topServices = <number>services?.getBoundingClientRect().top;
+      const bottomServices = <number>services?.getBoundingClientRect().bottom;
+
+      const faq = document.getElementById('faq');
+      const topFaq = <number>faq?.getBoundingClientRect().top;
+      const bottomFaq = <number>faq?.getBoundingClientRect().bottom;
+
+      const portfolio = document.getElementById('portfolio');
+      const topPortfolio = <number>portfolio?.getBoundingClientRect().top;
+      const bottomPortfolio = <number>portfolio?.getBoundingClientRect().bottom;
+
+      if (heightNavbar >= topServices && bottomServices >= heightNavbar) {
+        this.selectedMenu = 'Services';
+      } else if (heightNavbar >= topFaq && bottomFaq >= heightNavbar) {
+        this.selectedMenu = 'Faq';
+      } else if (heightNavbar >= topPortfolio && bottomPortfolio >= heightNavbar) {
+        this.selectedMenu = 'Portfolio';
+      } else {
+        this.selectedMenu = 'Home';
+      }
+    });
   }
 
 }
