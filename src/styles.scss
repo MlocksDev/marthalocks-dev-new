@@ -258,15 +258,7 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
     margin-top: 0;
 
     p {
-      font-size: 0.8rem;
-
-      @include media-breakpoint-up(lg) {
-        font-size: 1rem;
-      }
-    }
-
-    @include media-breakpoint-up(lg) {
-      margin-top: 5rem;
+      font-size: 1rem;
     }
 
     .icon {
@@ -280,7 +272,11 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
   }
 
   &__pic {
-    max-width: 80%;
+    max-width: 100%;
+
+    img {
+      max-width: 70%;
+    }
   }
 }
 
